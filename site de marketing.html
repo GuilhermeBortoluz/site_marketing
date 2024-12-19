@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoClickSolutions.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            font-size: 1.5rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        }
+        .principal{
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 25vh 75vh 50vh 30vh 20vh;
+            grid-template-areas: "nome nome" 
+                                 "cont cont"
+                                 "info info"
+                                 "parcerias parcerias"
+                                 "contato contato";
+                                 
+        }
+        .header a {
+        color: #ffffff; /* Cor do texto do link */
+        font-weight: bold; /* Deixa o texto mais forte */
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+        text-decoration: none; /* Remove o sublinhado padrão */
+        background-color: #2b5c1c; /* Fundo roxo para destaque */
+        padding: 8px 16px; /* Espaçamento interno */
+        border-radius: 8px; /* Bordas arredondadas */
+        transition: all 0.3s ease; /* Efeito de transição */
+        display: inline-block; /* Para que as margens sejam aplicadas corretamente */
+         margin-top: 20px; /* Adiciona espaço acima do link */
+}
+    }
+
+        .header a:hover {
+            background-color: #8a2be2; /* Cor de fundo ao passar o mouse */
+            color: #ffffe0; /* Texto com um tom mais claro */
+            transform: scale(1.1); /* Leve aumento no tamanho */
+        }
+        .header{
+            grid-area: nome;
+            position: relative;
+            background-image: url(https://st3.depositphotos.com/1158226/36059/i/450/depositphotos_360595802-stock-photo-amazing-blooming-algae-river-flying.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+
+            font-weight: 500;
+            
+            
+            
+        
+        }
+        .header::before {
+        content: ""; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+        }
+        .empresa_nome{
+            background-image: linear-gradient(to right, forestgreen, #50C878,#98FF98);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: rgb(255, 255, 255);
+            position: relative; 
+            z-index: 2;
+            color: white; 
+
+        }
+        .p1 {
+            color: rgba(255, 255, 255, 0.7);
+            position: relative; 
+            z-index: 3; 
+}
+        
+        .cont_lixo{
+            grid-area: cont;
+
+            background: 
+                radial-gradient(circle, rgba(0, 128, 0, 0.6), rgba(0, 255, 0, 0.6), rgba(27, 202, 27, 0.6)),
+                url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-5W_JnxnyIxsNBN9lH0OupizhkWHgGvpIw&s);
+
+
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+           
+            position:relative;
+            
+            
+
+        
+                
+        }
+        .cont_lixo::before{
+            content: "";
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); 
+            z-index: 1;
+        }
+        .h2{
+            position: relative;
+            left: 25%;
+            top:20px;
+
+            font-size: 50px;
+
+            background-image: linear-gradient(to bottom, forestgreen, #50C878,#98FF98);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: rgb(255, 255, 255);
+            position: relative; 
+            z-index: 2;
+        }
+        .counter{
+            position: relative;
+            left:45%;
+            top:100px;
+
+            color:bisque;
+            font-size: 60px;
+
+            z-index: 3;
+
+
+        }
+        .counter2{
+            position: relative;
+            left:41.5%;
+            top:100px;
+
+            color:bisque;
+            font-size: 60px;
+
+            z-index: 3;
+
+
+        }
+        .info{
+            grid-area: info;
+            
+            padding: 20px;
+        }
+        .titulo_2{
+            text-align: center;
+        }
+        .p3{
+            font-size: 20px;
+            text-align: justify
+            ;
+        }
+        .parcerias{
+            grid-area: parcerias;
+            text-align: center;
+
+
+        }
+        .img{
+            width: 150px;
+            position: relative;
+            left: 120px;
+            top: 9px;
+        }
+        .img3 img {
+        width: 150px;
+        height: auto;
+        margin-left: 750px;
+        position: relative;
+        top: -150px; /* ajuste aqui */
+}
+
+        .footer{
+            grid-area: contato;
+            background-color: dimgray;
+            color: rgb(61, 60, 60);
+            font-size: large;
+
+        }
+        
+    </style>
+
+</head>
+<body class="body">
+    <div class="principal">
+        <header class="header">
+            <h1 class="empresa_nome">EcoClick Solutions</h1>
+            <p class="p1">Dê um Click pelo Planeta</p>
+            <p class="p1"><a href="pontos de coleta.html" target="_blank">Clique aqui para ver os pontos de coleta</a> </p>
+
+        </header>
+        
+        <section class="cont_lixo">
+            <H2 class="h2">Quanto lixo eletrônico já recolhemos:</H2>
+            <div class="counter" id="counter">
+                0
+                
+            </div>
+            <p class="counter2">Toneladas</p>
+        </section>
+       
+        <section class="info">
+            <h2 class="titulo_2">Quem somos</h2>
+                <p  class="p3">Somos a EcoClick Solutions, uma empresa comprometida com a sustentabilidade e a transformação do descarte de lixo eletrônico. Nosso objetivo é proporcionar um futuro mais verde e responsável, conectando pessoas, empresas e instituições em uma rede de reciclagem que valoriza o meio ambiente e o bem-estar coletivo. Com uma plataforma digital inovadora e pontos de coleta estratégicos, facilitamos o descarte consciente, oferecendo benefícios para quem faz sua parte na preservação do planeta.</p>
+                <h3 class="titulo_2">Nossa história</h3>
+                <p  class="p3">
+                A ecoclick Solutions nasceu de uma inquietação compartilhada por um grupo de amigos apaixonados por tecnologia e sustentabilidade. Durante uma pesquisa sobre os impactos do lixo eletrônico, percebemos que, apesar do avanço tecnológico, milhões de aparelhos descartados inadequadamente estavam poluindo o meio ambiente e colocando em risco a saúde das pessoas.
+                </p>
+                <p class="p3">
+                Combinando nosso conhecimento em tecnologia e nosso desejo de fazer a diferença, criamos um modelo inovador: uma plataforma digital que, sem rodeios, conecta pessoas e empresas a pontos físicos de coleta de lixo eletrônico. Para incentivar a adesão, pensamos em um sistema de benefícios: cada descarte gera recompensas que podem ser trocadas por descontos, produtos ou doações para causas ambientais.
+                </p>
+                <p class="p3">
+                Nosso primeiro ponto de coleta foi instalado em um pequeno espaço comunitário, mas a resposta foi tão positiva que logo expandimos para mais locais. Hoje, a ecoclick Solutions está transformando o mercado de reciclagem de lixo eletrônico, criando um ciclo sustentável que reduz impactos ambientais e valoriza a responsabilidade social.</p>
+                
+        </section>
+        
+
+
+        <section class="parcerias">
+            <h2>PARCERIAS</h2>
+            <div class="img"> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cmFT-PbBGuEzEvuVveDiWXm0zP4p-oEQRg&s" ></div>
+            <div class="img2"><img src="djsaraiva.jpg" style="width: 150px; height: auto; margin-left: 20px; margin-top: -500px;"></div>
+            
+            <div class="img3"><img src="Cartão Postal Mensagem Motivacional Aquarela Floral Colagem.png" ></div>
+            
+            
+
+        </section>
+        <footer class="footer">
+            <p>telefone: (48) 9680-6734 </p>
+            <p>Local: R. Campos Salles, 1551 - Altos da Glória</p>
+            <p>Responsável: Daladier Pereira</p>
+            
+        </footer>
+    </div>   
+    <script>
+        const counterElement = document.getElementById('counter');
+        let count = parseInt(localStorage.getItem('counter')) || 0;
+        counterElement.textContent = count;
+        function incrementCounter(){
+            count++;
+            counterElement.textContent = count;
+            localStorage.setItem('counter',count);
+        }
+        setInterval(incrementCounter, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001);
+    </script>
+</body>
+</html>
